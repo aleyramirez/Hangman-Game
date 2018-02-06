@@ -1,0 +1,27 @@
+h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 700%;
+    color: #ffffff;
+};
+p {
+    color: white;
+};
+h4 {
+    color: white;
+};
+body {
+    background-image: url(assets/images/dark-triangles.png)
+};
+.game-screen {
+    height: 25%;
+};
+.panel-footer {
+    position: fixed;
+	height: 40px;
+	bottom: 0;
+	width: 100%;
+	background-color: #7c7c7c;
+	color: white;
+	text-align: center;
+	border-top: solid 3px #4ece9f;
+};

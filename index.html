@@ -1,0 +1,58 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title> Hangman </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+    <style>
+        body {
+    background-image: url(assets/images/dark-triangles.png)
+};
+    </style>
+    <body>
+        <!-- title -->
+    <div class="container-fluid text-center" style="border: thin solid black;">
+        <h1>Hangman</h1>
+        <h3>TV Shows</h3>
+    </div>
+    <br>
+    <!-- Game Context -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8" style="border: thin solid black;">
+                <h4>In this game, there are TV shows that are to be guessed. Try to guess them all. <small>Hint: The category are comdy shows.</small></h4>
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- Game screen -->
+    <div class="container-fluid text-center game-screen" style="border: thin solid black;">
+        <h2 class="underScore">_ _ _ _</h2>
+    </div>
+    <br>
+    <!-- Left column Words list -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3" style="border: thin solid black;">
+                <p>words words words</p>
+            </div>
+            <!-- Middle spacer -->
+            <div class="col-md-6">
+            </div>
+            <!-- Right column restart option -->
+            <div class="col-md-3" style="border: thin solid black;">
+                <p>restart words words words</p>
+            </div>
+        </div>
+    </div>
+    </body>
+    <script src="assets/javascript/game.js"></script>
+</html>
