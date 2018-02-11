@@ -2,19 +2,23 @@ h1 {
     font-family: 'Bangers', cursive;
     font-size: 700%;
     color: #ffffff;
-};
+}
+h2 {
+    padding-top: 5%;
+    color: #7c7c7c;
+}
 p {
     color: white;
-};
-h4 {
+}
+h4, h3 {
     color: white;
-};
+}
 body {
-    background-image: url(assets/images/dark-triangles.png)
-};
+    background-image: url(../images/dark-triangles.png)
+}
 .game-screen {
     height: 25%;
-};
+}
 .panel-footer {
     position: fixed;
 	height: 40px;
@@ -24,4 +28,11 @@ body {
 	color: white;
 	text-align: center;
 	border-top: solid 3px #4ece9f;
-};
+}
+.window {
+    background-color: #2b2b2b;
+    border: thin solid black;
+}
+.head {
+    background-color: black;
+}

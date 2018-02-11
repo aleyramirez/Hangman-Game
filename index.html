@@ -8,15 +8,10 @@
         <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     </head>
-    <style>
-        body {
-    background-image: url(assets/images/dark-triangles.png)
-};
-    </style>
     <body>
         <!-- title -->
-    <div class="container-fluid text-center" style="border: thin solid black;">
-        <h1>Hangman</h1>
+    <div class="container-fluid text-center">
+        <h1 class="head">Hangman</h1>
         <h3>TV Shows</h3>
     </div>
     <br>
@@ -25,7 +20,7 @@
         <div class="row">
             <div class="col-md-2">
             </div>
-            <div class="col-md-8" style="border: thin solid black;">
+            <div class="col-md-8 window" >
                 <h4>In this game, there are TV shows that are to be guessed. Try to guess them all. <small>Hint: The category are comdy shows.</small></h4>
             </div>
             <div class="col-md-2">
@@ -34,21 +29,23 @@
     </div>
     <br>
     <!-- Game screen -->
-    <div class="container-fluid text-center game-screen" style="border: thin solid black;">
-        <h2 class="underScore">_ _ _ _</h2>
+    <div class="container-fluid text-center game-screen window" >
+        <h2 class="underscore"></h2>
     </div>
     <br>
     <!-- Left column Words list -->
     <div class="container">
         <div class="row">
-            <div class="col-md-3" style="border: thin solid black;">
-                <p>words words words</p>
+            <div class="col-md-3 window" >
+                <p>Right Guess: <span class="rightGuess"></span></p>
+                <br>
+                <p>Wrong Guess: <span class="wrongGuess"></span></p>
             </div>
             <!-- Middle spacer -->
             <div class="col-md-6">
             </div>
             <!-- Right column restart option -->
-            <div class="col-md-3" style="border: thin solid black;">
+            <div class="col-md-3 window" >
                 <p>restart words words words</p>
             </div>
         </div>
