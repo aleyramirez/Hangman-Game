@@ -45,13 +45,14 @@ var keyword = String.fromCharCode(event.keyCode); // Variabl for changing the pr
 var capShift = keyword.toUpperCase(); // Get the key pressed and change it into a an uppercase key
 
 // User's right guess
-if(choosenWord.indexOf(capShift) > -1) { // If keypressed is found in the chosen word ( greater than - 1 )
+for ( i = 0; i < choosenWord.length; i++) {
+    if(capShift == choosenWord.charAt(i)) { // If keypressed is found in the chosen word
 
-// Add to right words array0
-    rightWord.push(capShift); // Push it into the right words array
+// Add to right words array
+    rightWord.push(); // Push it into the right words array
 
 // Replace underscore with right word
-    underScore[choosenWord.indexOf(capShift)] = capShift; // Replace the underscore with the right word
+    underScore[choosenWord.charAt(i)] = capShift; // Replace the underscore with the right word
     docUnderScore[0].innerHTML = underScore.join(' '); // After right word is paste in HTML, seperate the words with a space    
     docRightGuess[0].innerHTML = rightWord; // Paste the right word array in HTML
 
@@ -59,9 +60,9 @@ if(choosenWord.indexOf(capShift) > -1) { // If keypressed is found in the chosen
     wrongWord.push(capShift); // If key pressed is not in the chosen word then push it to the wrong words array
     docWrongGuess[0].innerHTML = wrongWord; // Paste the wrong word array into HTML
 }
+}
 });
 
-
-docUnderScore[0].innerHTML = generateUnderscore().join(' ');
+document.getElementById("refresh").onclick.addEventListener("click", window.location);
 console.log(choosenWord);
 // console.log(generateUnderscore());

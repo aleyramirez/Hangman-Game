@@ -7,32 +7,26 @@ h2 {
     padding-top: 5%;
     color: #7c7c7c;
 }
-p {
-    color: white;
-}
-h4, h3 {
+h4, h3, p {
     color: white;
 }
 body {
     background-image: url(../images/dark-triangles.png)
 }
-.game-screen {
-    height: 25%;
-}
-.panel-footer {
-    position: fixed;
-	height: 40px;
-	bottom: 0;
-	width: 100%;
-	background-color: #7c7c7c;
-	color: white;
-	text-align: center;
-	border-top: solid 3px #4ece9f;
-}
-.window {
+
+.block {
     background-color: #2b2b2b;
     border: thin solid black;
 }
 .head {
     background-color: black;
+}
+.button {
+    color: #fff;
+    background-color: #5e5e5e;
+    border-color: #1d1d1d;
+}
+.button-body {
+    text-align: center;
+    padding: 1% 1% 1% 1%;
 }
